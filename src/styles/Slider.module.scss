@@ -1,0 +1,17 @@
+.slider {
+  margin-top: 2rem;
+  position: relative;
+  height: 5px;
+  width: 100%;
+  border-radius: 5px;
+  background-color: var(--gray-100-color);
+}
+
+.fill {
+  position: absolute;
+  inset: 0;
+  width: 65%;
+  height: 100%;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+}

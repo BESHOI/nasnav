@@ -1,0 +1,33 @@
+.headercategories {
+  background-color: var(--gray-900-color);
+  color: var(--gray-50-color);
+  height: 3rem;
+  margin-top: 1rem;
+
+  & > * {
+    width: 100%;
+  }
+
+  display: none;
+
+  @media (min-width: 900px) {
+    display: grid;
+  }
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+
+  & > li a {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+  }
+}
+
+.offer {
+  color: var(--offers-color);
+}

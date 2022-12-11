@@ -1,0 +1,73 @@
+.mainheader {
+  display: none;
+  margin-top: 1rem;
+  @media (min-width: 900px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.search {
+  position: relative;
+
+  & input,
+  & label {
+    position: absolute;
+  }
+
+  & input {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 24px;
+    outline: none;
+    line-height: 48px;
+    padding-inline-start: 2.5rem;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid var(--gray-100-color);
+  }
+
+  & label {
+    margin-top: 12px;
+    left: 2%;
+  }
+}
+
+.logo {
+  place-self: center;
+}
+
+.nav {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.navIcon {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+
+.basket {
+  position: relative;
+  cursor: pointer;
+}
+
+.dot {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 15px;
+  height: 15px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.number {
+  position: absolute;
+  z-index: 50;
+  font-size: 10px;
+}

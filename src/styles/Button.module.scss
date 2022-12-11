@@ -1,0 +1,30 @@
+.btn {
+  border: none;
+  outline: none;
+  display: inline-block;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.primary {
+  background-color: var(--primary-color);
+  color: var(--gray-50-color);
+}
+
+.secondary {
+  background-color: var(--secondary-color);
+  color: var(--gray-900-color);
+}
+
+.large {
+  width: 252px;
+  height: 54px;
+  border-radius: 27px;
+}
+
+.small {
+  font-size: 10px;
+  width: 80px;
+  height: 24px;
+  border-radius: 12px;
+}

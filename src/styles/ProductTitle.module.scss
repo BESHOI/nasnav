@@ -1,0 +1,15 @@
+.title {
+  max-width: 40ch;
+  font-weight: 600;
+  margin-bottom: 0;
+  
+  &Large {
+    font-size: 18px;
+  }
+
+  &Small {
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 8px;
+  }
+}

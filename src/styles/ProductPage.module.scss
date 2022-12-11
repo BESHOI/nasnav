@@ -1,0 +1,28 @@
+.productPage {
+  position: relative;
+}
+
+.header {
+  display: grid;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 0;
+  margin-top: 5rem;
+}
+
+.description {
+  font-size: 27px;
+  font-weight: 300;
+  color: var(--gray-700-color);
+  margin-top: 0.5rem;
+}
+
+.similar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}

@@ -1,0 +1,47 @@
+.sizes {
+  position: relative;
+  &::after {
+    position: absolute;
+    content: '';
+    top: 100%;
+    right: 0;
+    background-color: var(--gray-100-color);
+    height: 1px;
+    width: 100%;
+    margin-top: 1rem;
+  }
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.flex {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+
+  & h3 {
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
+
+.size {
+  display: grid;
+  place-items: center;
+  width: 60px;
+  height: 60px;
+  font-size: 10px;
+  border: 1px solid var(--gray-100-color);
+  border-radius: 30px;
+  cursor: pointer;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.active {
+  background-color: var(--gray-200-color);
+  color: var(--gray-900-color);
+}
