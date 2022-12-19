@@ -34,7 +34,9 @@ export default function MainHeader({ cart, setCart, setOverlay }) {
             <Image src="/images/basket.svg" alt="" width={30} height={24} />
             <div className={s.dot}>
               <Image src="/images/yellow-dot.svg" alt="" width={15} height={15} className={s.dot} />
-              <div className={s.number}>{cart.length}</div>
+              <div className={s.number}>
+                {cart.length !== 0 ? cart.map((item) => item.quantity) : 0}
+              </div>
             </div>
           </div>
           Cart

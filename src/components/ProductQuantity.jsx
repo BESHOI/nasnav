@@ -14,10 +14,14 @@ export default function ProductQuantity({ cart, setCart, item, id }) {
     setCounter(counter + 1)
   }
 
-  const handleAddToCart = (id) => {
-    cart.filter((item) => item.id !== id)
-      ? setCart([{ item, quantity: counter }])
-      : (handleAddClick, setCart([...cart, { ...item, quantity: counter }]))
+  const handleAddToCart = () => {
+    setCart([{ item, quantity: counter }])
+
+    cart.filter((cartItem) => {
+      cartItem.item.id !== id
+        ? setCart([...cart, { item, quantity: counter }])
+        : setCart([{ item, quantity: cartItem.quantity + counter }])
+    })
   }
 
   return (
@@ -34,7 +38,7 @@ export default function ProductQuantity({ cart, setCart, item, id }) {
           </button>
         </div>
         <div className={s.btns}>
-          <Button text="Add To Cart" primary large onClick={(id) => handleAddToCart(id)} />
+          <Button text="Add To Cart" primary large onClick={() => handleAddToCart()} />
           <Button text="Pickup From Store" large />
         </div>
       </div>

@@ -37,9 +37,9 @@ export default function MyCart({ cart, setCart, show, setOverlay }) {
       <p className={s.text}>{cart?.length !== 0 ? 'Cart Summary' : 'Cart Empty'} </p>
 
       {cart?.length !== 0 &&
-        cart.map((item, index) => {
-          const { images, title, price } = item.item
-          const quantity = item.quantity
+        cart.map((cartItem, index) => {
+          const { images, title, price } = cartItem.item
+          const quantity = cartItem.quantity
           const MainImage = images[0]
           const { discount, regular } = price
 
